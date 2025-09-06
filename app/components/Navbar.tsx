@@ -8,7 +8,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
-import { Instagram, ShoppingCart, Menu, Feather, Sparkles, UserCircle } from "lucide-react";
+import { Instagram, ShoppingCart, Menu, Feather, Sparkles, UserCircle, LucideSquareArrowOutUpRight } from "lucide-react";
 import { BsWhatsapp } from "react-icons/bs";
 
 export function Navbar() {
@@ -26,6 +26,7 @@ export function Navbar() {
     { href: "/#iniciante", label: "Iniciante", icon: <Feather className="h-4 w-4" /> },
     { href: "/#avancado", label: "Avançado", icon: <Sparkles className="h-4 w-4" /> },
     { href: "/#sobre", label: "Sobre", icon: <UserCircle className="h-4 w-4" /> },
+    { href: "/catalogo", label: "Catálogo", icon: <LucideSquareArrowOutUpRight className="h-4 w-4" /> },
   ];
 
   // CORREÇÃO: Adicionamos a propriedade 'icon' aqui para consistência
